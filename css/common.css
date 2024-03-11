@@ -13,7 +13,7 @@ body{
 
 
     /* 임시 높이 */ 
-    height: 3000px;
+    /* height: 3000px; */
 
 }
 a{
@@ -34,8 +34,8 @@ img{
 .btn{
     width: 130px;
     padding: 10px;
-    border: 2px solid #333;
-    border-radius: 4px;
+    border: 2px solid #163359;
+    border-radius: 50PX;
     color: #333;
     font-size: 16px;
     font-weight: 700;
@@ -46,11 +46,11 @@ img{
     transition: 0.4s;
 }
 .btn:hover{
-    background-color: #333;
+    background-color: #163359;
     color: #fff;
 }
 .btn.btn--reverse{
-    background-color: #333;
+    background-color: #163359;
     color: #fff;
 }
 .btn.btn--reverse:hover{
@@ -58,20 +58,20 @@ img{
     color: #333;
 }
 .btn.btn--brown{
-    color: #592818;
-    border-color: #592818;
+    color: #163359;
+    border-color: #163359;
 }
 .btn.btn--brown:hover{
     color: #fff;
-    background-color: #592818;
+    background-color: #163359;
 }
 .btn.btn--gold{
-    color: #D9AA8A;
-    border-color: #D9AA8A;
+    color: #F2B262;
+    border-color: #F2B262;
 }
 .btn.btn--gold:hover{
-    color: #fff;
-    background-color: #D9AA8A;
+    color: #163359;
+    background-color: #F2B262;
 }
 .btn.btn--white{
     color: #fff;
@@ -107,7 +107,7 @@ header>.inner{
     /* width: 1100px; */
     height: 120px;
     /* margin: 0px auto; */
-    background-color: FAF3F0;
+    background-color: #FAF3F0;
 
     /* position: relative; */
 }
@@ -120,7 +120,7 @@ header>.inner{
 header .logo{
     height: 75px;
     position: absolute;
-    top: 0;
+    top: -25px;
     bottom: 0;
     left: 0;
     right: 0;
@@ -173,7 +173,7 @@ header .sub-menu .search input{
     padding: 4px 10px;
     border: 1px solid #ccc;
     box-sizing: border-box;
-    border-radius: 5px;
+    border-radius: 50px;
     outline: none;
     background-color: #fff;
     color: #777;
@@ -182,7 +182,7 @@ header .sub-menu .search input{
 }
 header .sub-menu .search input:focus{
     width: 190px;
-    border-color: #690;
+    border-color: #163359;
 }
 header .sub-menu .search .material-symbols-outlined{
     height: 24px;
@@ -207,14 +207,17 @@ header .main-menu{
     display: flex;
 }
 header .main-menu .item .item__name{
-    padding: 10px 20px 34px 20px;
+    padding: 10px 20px 10px 20px;
     font-family: Arial, sans-serif;
-    font-size: 13px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
 }
 header .main-menu .item:hover .item__name{
-    background-color: #2c2a29;
-    color: #669900;
-    border-radius: 6px 6px 0 0;
+    background-color: #F2B262;
+    color: #163359;
+    font-weight: bold;
+    border-radius: 50px 50px; 
 }
 header .main-menu .item .item__contents{
     width: 100%;
@@ -229,50 +232,29 @@ header .main-menu .item .item__contents .contents__menu{
     /* background-color: red; */
     /* height: 200px; */
 
-    background-color: #2c2a29;
+    background-color: #163359;
 }
 
 header .main-menu .item .item__contents .contents__menu>ul{
     padding: 20px 0;
     display: flex;
+    justify-content: flex-end; 
 }
 header .main-menu .item .item__contents .contents__menu>ul>li{
-    width: 220px;
+    width: 180px;
+    /* border: 1px solid red; */
 }
 header .main-menu .item .item__contents .contents__menu>ul>li h4{
     padding: 3px 0 12px 0;
     font-size: 14px;
     color: #fff;
-}
-header .main-menu .item .item__contents .contents__menu>ul>li ul li{
-    padding: 5px 0;
-    font-size: 12px;
-    color: #999;
+    text-align: center;
     cursor: pointer;
 }
-header .main-menu .item .item__contents .contents__menu>ul>li ul li:hover{
-    color: #669900;
+header .main-menu .item .item__contents .contents__menu>ul>li:hover h4{
+    transform: scale(1.2);
+    transition: all 0.2s;
 }
-
-header .main-menu .item .item__contents .contents__texture{
-    /* background-color: orange; */
-    /* height: 100px; */
-
-    padding: 26px 0;
-    font-size: 12px;
-    background-image: url(../images/main_menu_pattern.jpg);
-}
-header .main-menu .item .item__contents .contents__texture h4{
-    color: #999;
-    font-weight: 700;
-}
-
-header .main-menu .item .item__contents .contents__texture p{
-    color: #669900;
-    margin: 4px 0 14px;
-}
-
-
 
 /* FOOTER */
 footer{
@@ -311,7 +293,7 @@ footer .menu li a{
     padding: 15px;
 }
 footer .menu li a.green{
-    color: #669900;
+    color: #F2B262;
 }
 footer .btn-group{
     margin-top: 20px;
